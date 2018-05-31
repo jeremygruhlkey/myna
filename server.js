@@ -8,7 +8,13 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("client/public"));
+app.use(express.static("./public"));
+
+mongoose.Promise = Promise;
+
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/myna"
+);
 
 app.listen(PORT, () => {
     console.log(`Now listening on PORT ${PORT}`)
