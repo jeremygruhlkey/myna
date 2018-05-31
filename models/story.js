@@ -5,8 +5,11 @@ const StorySchema = new Schema({
     title: {
         type: String,
     },
+    author: {
+        type: String,
+    },
     body: {
-        type: String
+        type: String,
     }
 }, {timestamp: Date });
 
