@@ -2,6 +2,7 @@
   "name": "myna",
   "version": "1.0.0",
   "main": "index.js",
+  "proxy": "http://localhost:3001",
   "repository": "git@github.com:jeremygruhlkey/myna.git",
   "license": "MIT",
   "scripts": {
